@@ -24,6 +24,8 @@ yarn eslint --init
 Enforce >> import/export >> para node (Standard) >> salvar em JS
 
 ### ➡ ➡ Resultado atual
+-----------------------
+
 ```js
 module.exports = {
   parser: "@typescript-eslint/parser",
@@ -45,5 +47,28 @@ module.exports = {
 };
 
 ```
+
+## Configurando Prettier
+
+Adicione como dependecia de desenvolvimento o prettier e estes plugins:
+
+```sh
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
+```
+### ➡ ➡ Resultado atual
+-----------------------
+```js
+...
+  extends: [
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "standard",
+  ],
+...
+  ```
+Adicione em .eslintrc.js/extends(2)
+
+`'prettier/@typescript-eslint'`
+
 
 Feito por José Carlos de Lima Junior (kvasir)

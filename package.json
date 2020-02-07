@@ -10,7 +10,7 @@
   "scripts": {
     "start": "",
     "dev": "nodemon src/server.ts",
-    "bulid": ""
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
   },
   "devDependencies": {
     "nodemon": "^2.0.2",

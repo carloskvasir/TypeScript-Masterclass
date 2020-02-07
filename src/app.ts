@@ -1,6 +1,11 @@
 import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
+import dotenv from 'dotenv'
+
+import routes from './routes'
+
+dotenv.config()
 
 class App {
   public express: express.Application
@@ -19,16 +24,16 @@ class App {
   }
 
   private database (): void {
-    mongoose.connect('mongodb://docker:27017/tsnode', {
-      useNewUrlParser: true,
-      useUnifiedTopology: true
-    })
+    mongoose.connect(
+      `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@${process.env.DB_SERV}/${process.env.DB_BASE}?${process.env.DB_OPTS}`,
+      {
+        useNewUrlParser: true,
+        useUnifiedTopology: true
+      })
   }
 
   private routes (): void {
-    this.express.get('/', (req, res) => {
-      return res.send('Hello world')
-    })
+    this.express.use(routes)
   }
 }
 

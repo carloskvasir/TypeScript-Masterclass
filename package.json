@@ -7,6 +7,11 @@
   "author": "Carlos Lima (kvasir)",
   "license": "MPL-2.0",
   "private": false,
+  "scripts": {
+    "start": "",
+    "dev": "sucrase-node src/index.ts",
+    "bulid": ""
+  },
   "devDependencies": {
     "sucrase": "^3.12.1",
     "typescript": "^3.7.5"

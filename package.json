@@ -9,10 +9,11 @@
   "private": false,
   "scripts": {
     "start": "",
-    "dev": "sucrase-node src/index.ts",
+    "dev": "nodemon src/server.ts",
     "bulid": ""
   },
   "devDependencies": {
+    "nodemon": "^2.0.2",
     "sucrase": "^3.12.1",
     "typescript": "^3.7.5"
   }

@@ -23,7 +23,7 @@ yarn eslint --init
 ```
 Enforce >> import/export >> para node (Standard) >> salvar em JS
 
-### ➡ ➡ Resultado atual
+### ✔️✔️ Resultado atual
 -----------------------
 
 ```js
@@ -55,7 +55,7 @@ Adicione como dependecia de desenvolvimento o prettier e estes plugins:
 ```sh
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
-### ➡ ➡ Resultado atual
+### ✔️✔️ Resultado atual
 -----------------------
 ```js
 ...

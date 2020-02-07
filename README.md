@@ -1,6 +1,7 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 # TypeScript Masterclass
 
-## ❓ About - sobre
+## ❓ About - Sobre
 
 Este repositorio tem o proposito de documentar para futuras consultas como desenvolver em TypeScript utilizando o sucrase no desenvolvimento.
 
